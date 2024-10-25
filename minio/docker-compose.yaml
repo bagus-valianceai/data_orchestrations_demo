@@ -1,0 +1,15 @@
+name: minio
+services:
+  minio:
+    image: minio/minio:latest
+    container_name: minio
+    ports:
+      - ${MINIO_HOST_API_PORT}:${MINIO_CONTAINER_API_PORT}
+      - ${MINIO_HOST_CONSOLE_PORT}:${MINIO_CONTAINER_CONSOLE_PORT}
+    environment:
+      - MINIO_ROOT_USER=${MINIO_ROOT_USER}
+      - MINIO_ROOT_PASSWORD=${MINIO_ROOT_PASSWORD}
+      - MINIO_ADDRESS=${MINIO_ADDRESS}
+      - MINIO_CONSOLE_ADDRESS=${MINIO_CONSOLE_ADDRESS}
+      - MINIO_PORT=${MINIO_CONTAINER_API_PORT}
+    command: server ${MINIO_CONTAINER_DATA_DIR}

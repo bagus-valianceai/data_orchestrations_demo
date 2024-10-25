@@ -1,0 +1,7 @@
+.git
+.venv_*
+logs
+dags/__pycache__
+dags/credit_scoring_service/__pycache__
+dags/credit_scoring_service/utils/__pycache__
+api/src/__pycache__

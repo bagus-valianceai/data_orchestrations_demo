@@ -1,0 +1,11 @@
+name: postgres
+services:
+  postgres:
+    image: postgres
+    container_name: postgres
+    ports:
+      - ${POSTGRES_HOST_PORT}:${POSTGRES_CONTAINER_PORT}
+    environment:
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASS}
+      - POSTGRES_INITDB_ARGS=${POSTGRES_INITDB}
