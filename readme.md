@@ -53,12 +53,14 @@ The **preprocess_scaler_[yyymmdd].pkl** is the feature scaler for data numerical
 All required files could be downloaded manually from MinIO WebUI after you train the model.
 <br><br>
 This API Endpoints also required Python Virtual Environment.
+<br>
 How to setup VENV:
 1. Go to root directory
 2. Open terminal and execute command `python3 -m venv .venv_credit_scoring`
 3. For WSL, Ubuntu, and Linux, activate the venv by executing command `source .venv_credit_scoring/bin/activate`
 4. Install requirements by executing command `pip install -r requirements.txt`, make sure you are in the same folder with the `requirements.txt` file
 <br><br>
+
 How to run:
 1. After all files above has been provided and venv has been acticated, change directory to `api/src`
 2. Open terminal and execute command `fastapi dev api.py
