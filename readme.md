@@ -35,15 +35,15 @@ The `docker-compose.yaml` for postgres and minio are already provided in directo
 This API Endpoints intended for testing prediction of model that has been trained, if you not trained your model yet you can't start this API Endpoints because the required files isn't available.
 <br><br>
 The required files:
-1. best_model.pkl
-2. preprocess_cat_imputer_[yyyymmdd].pkl
-3. preprocess_num_imputer_[yyyymmdd].pkl
-4. preprocess_ohe_[yyyymmdd].pkl
-5. preprocess_scaler_[yyymmdd].pkl
+1. `best_model.pkl`
+2. `preprocess_cat_imputer_[yyyymmdd].pkl`
+3. `preprocess_num_imputer_[yyyymmdd].pkl`
+4. `preprocess_ohe_[yyyymmdd].pkl`
+5. `preprocess_scaler_[yyymmdd].pkl`
 <br><br>
 The **best_model.pkl** is trained model.
 <br>
-The **preprocess_cat_imputer_[yyyymmdd].pkl** and **preprocess_num_imputer_[yyyymmdd].pkl** are categorical and numerical imputer, in the last part of name -**[yyyymmdd]**- is the date when imputers are fitted. Using different date of imputer with model could broke your pipeline.
+The **preprocess_cat_imputer_[yyyymmdd].pkl** and **preprocess_num_imputer_[yyyymmdd].pkl** are categorical and numerical imputer, in the last part of name **[yyyymmdd]** is the date when imputers are fitted. Using different date of imputer with model could broke your pipeline.
 <br>
 The **preprocess_ohe_[yyyymmdd].pkl** is encoder for categorical data, the **[yyyymmdd]** part is the same as imputer.
 <br>
